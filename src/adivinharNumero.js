@@ -8,9 +8,21 @@
 // - Retornar `"Errou! Tente novamente!"` se o palpite estiver incorreto.
 
 function adivinharNumero(max, palpite) {
-  // TODO: implementar função
+  gerarnumero = console.log(Math.floor(Math.max() * 11)) /* gera um número aleatório até max*/
+
+ while(palpite !== gerarnumero ){
+ return('Errou!')
+ palpite = prompt('Tente novamente:')
+ }
+
+ if (palpite == gerarnumero){
+   return('Acertou!')
+ }
 }
 
 
 // NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { adivinharNumero };
+
+
+
